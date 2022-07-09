@@ -25,7 +25,7 @@ const getCarById = async  (req, res) => {
     // console.log(req.params.id)
     const foundCar = cars.filter(car => car.id === req.params.id)
     // console.log(foundCar)
-    return res.status(200).json({ data : foundCar });
+    return res.status(200).json({ data : foundCar.id });
 }
 
 const deleteCarById = async  (req, res) => {
